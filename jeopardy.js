@@ -50,7 +50,7 @@ async function getCategoryIds(num) {
  */
 
 async function getCategory(catId) {
-  const response = await axios.get("http://jservice.io/api/category", {
+  const response = await axios.get("https://jservice.io/api/category", {
     params: { id: catId },
   });
   let data = response.data;
